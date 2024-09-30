@@ -1,0 +1,1 @@
+La idea de este proyecto es para  que se hagan en grupo, que escriban los ejercicios en las fuciones del archivo ejercicios.ts para luego correr los test y corregir de forma rápida.
