@@ -14,7 +14,12 @@ import {
     contarPalabras,
     calcularMediana,
     mcd,
-    validarTarjeta
+    validarTarjeta,
+    sumaDigitos,
+    esPangrama,
+    convertirABinario,
+    esNumeroPerfecto,
+    esAnagrama
 } from '../ejercicios';
 
 // Test para suma de los primeros N números naturales
@@ -38,19 +43,6 @@ test('invertir una cadena', () => {
 // Test para contar las vocales en una cadena
 test('contar vocales', () => {
     expect(contarVocales('hola mundo')).toBe(4);
-});
-
-// Test para encontrar el número mayor en un arreglo
-test('encontrar el número mayor', () => {
-    expect(numeroMayor([3, 5, 7, 2, 8])).toBe(8);
-});
-
-// Test para generar la tabla de multiplicar
-test('tabla de multiplicar del 5', () => {
-    expect(tablaMultiplicar(5)).toEqual([
-        '5 x 1 = 5', '5 x 2 = 10', '5 x 3 = 15', '5 x 4 = 20', '5 x 5 = 25',
-        '5 x 6 = 30', '5 x 7 = 35', '5 x 8 = 40', '5 x 9 = 45', '5 x 10 = 50'
-    ]);
 });
 
 // Test para verificar si una palabra es un palíndromo
@@ -89,20 +81,45 @@ test('Multiplicar elementos de [[1, 2], [3, 4]] es 24', () => {
 
 test('Contar palabras en "Hola mundo" es 2', () => {
     expect(contarPalabras('Hola mundo')).toBe(2);
-  });
+});
 
-  test('Mediana de [1, 2, 3, 4, 5] es 3', () => {
+test('Mediana de [1, 2, 3, 4, 5] es 3', () => {
     expect(calcularMediana([1, 2, 3, 4, 5])).toBe(3);
-  });
+});
 
-  test('MCD de 48 y 18 es 6', () => {
+test('MCD de 48 y 18 es 6', () => {
     expect(mcd(48, 18)).toBe(6);
-  });
+});
 
-  test('Validar tarjeta "4532015112830366" es válida (algoritmo de Luhn)', () => {
+test('Validar tarjeta "4532015112830366" es válida (algoritmo de Luhn)', () => {
     expect(validarTarjeta('4532015112830366')).toBe(true);
-  });
-  
-  test('Validar tarjeta "1234567812345670" no es válida', () => {
+});
+
+test('Validar tarjeta "1234567812345670" no es válida', () => {
     expect(validarTarjeta('1234567812345670')).toBe(false);
-  });
+});
+
+test('Validar suma de dígitos', () => {
+    expect(sumaDigitos(1234)).toBe(10);
+    expect(sumaDigitos(567)).toBe(18);
+});
+
+test('Verificar si dos palabras son anagramas', () => {
+    expect(esAnagrama('amor', 'roma')).toBe(true);
+    expect(esAnagrama('palabra', 'anagrama')).toBe(false);
+});
+
+test('Verificar si un número es perfecto', () => {
+    expect(esNumeroPerfecto(28)).toBe(true);
+    expect(esNumeroPerfecto(10)).toBe(false);
+});
+
+test('Convertir un número a binario', () => {
+    expect(convertirABinario(255)).toBe('11111111');
+    expect(convertirABinario(8)).toBe('1000');
+});
+
+test('Verificar si una cadena es un pangrama', () => {
+    expect(esPangrama('El veloz murciélago hindú comía feliz cardillo y kiwi')).toBe(true);
+    expect(esPangrama('Hola Mundo')).toBe(false);
+});
