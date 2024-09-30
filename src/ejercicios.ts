@@ -85,3 +85,41 @@ export function mcd(a: number, b: number): number {
 export function validarTarjeta(numero: string): boolean {
 
 }
+
+// Crea una función que reciba un número y devuelva la suma de sus dígitos.
+// Ejemplo: 11 >> 1 + 1 = 2
+export function sumaDigitos(n: number): number {
+
+} 
+
+// Verificar si una cadena es un anagrama de otra.
+// Dada dos cadenas de texto, devuelve true si son anagramas entre sí (es decir, si las letras se pueden reorganizar para formar la otra cadena), de lo contrario, devuelve false.
+// Ejemplo: "roma" y "amor >> true
+export function esAnagrama(cadena1: string, cadena2: string): boolean {
+
+}
+
+// Verificar si un número es perfecto.
+// Un número perfecto es aquel que es igual a la suma de sus divisores propios (excluyendo el propio número). Escribe una función que reciba un número y devuelva true si es un número perfecto, de lo contrario, devuelve false.
+// Ejemplo: 
+//  28 >> true (1 + 2 + 4 + 7 + 14 = 28)
+//  10 >> false
+export function esNumeroPerfecto(n: number): boolean {
+
+}
+
+// Convertir un número a binario.
+// Crea una función que reciba un número entero positivo y devuelva su representación en binario como una cadena de texto.
+// Ejemplo: 255 >> "11111111"
+export function convertirABinario(n: number): string {
+
+}
+
+// Determinar si una cadena es un pangrama.
+// Un pangrama es una frase que contiene todas las letras del alfabeto al menos una vez. Escribe una función que reciba una cadena de texto y devuelva true si es un pangrama, de lo contrario, devuelve false.
+// Ejemplo:
+// "El veloz murciélago hindú comía feliz cardillo y kiwi" >> true
+// "Hola Mundo" >> false
+export function esPangrama(cadena: string): boolean {
+
+}
