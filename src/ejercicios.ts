@@ -1,70 +1,87 @@
+// Dado un número `n`, devuelve la suma de los primeros `n` números naturales.
 export function sumaNumerosNaturales(n: number): number {
-    let suma = 0;
-    for (let i = 1; i <= n; i++) {
-        suma += i;
-    }
-    return suma;
+
 }
 
+// Dado un número `n`, verifica si es un número primo. Devuelve `true` si es primo, de lo contrario, devuelve `false`.
 export function esPrimo(n: number): boolean {
-    if (n <= 1) return false;
-    for (let i = 2; i <= Math.sqrt(n); i++) {
-        if (n % i === 0) return false;
-    }
-    return true;
+
 }
 
+// Dada una cadena de texto, devuelve la cadena invertida. 
+// Ejemplo: "hola" -> "aloh"
 export function invertirCadena(cadena: string): string {
-    return cadena.split('').reverse().join('');
+
 }
 
+// Dada una cadena de texto, cuenta y devuelve el número de vocales presentes en la cadena.
 export function contarVocales(cadena: string): number {
-    let cuenta = 0;
-    const vocales = "aeiouAEIOU";
-    for (let char of cadena) {
-        if (vocales.includes(char)) {
-            cuenta++;
-        }
-    }
-    return cuenta;
+
 }
 
-export function numeroMayor(arr: number[]): number {
-    let mayor = arr[0];
-    for (let num of arr) {
-        if (num > mayor) {
-            mayor = num;
-        }
-    }
-    return mayor;
-}
 
-export function tablaMultiplicar(n: number): string[] {
-    let arr:string[] = []
-    for (let i = 1; i <= 10; i++) {
-        arr.push(`${n} x ${i} = ${n * i}`)
-        // console.log(`${n} x ${i} = ${n * i}`);
-    }
-    return arr;
-}
-
+// Dada una palabra, devuelve `true` si es un palíndromo (se lee igual de izquierda a derecha y de derecha a izquierda), de lo contrario, devuelve `false`.
+// Ejemplo: "anilina" -> true, "palabra" -> false
 export function esPalindromo(palabra: string): boolean {
-    const palabraInvertida = palabra.split('').reverse().join('');
-    return palabra === palabraInvertida;
+
 }
 
+// Convierte una temperatura en grados Celsius a Fahrenheit y devuelve el resultado.
+// Fórmula: F = (C * 9/5) + 32
 export function celsiusAFahrenheit(celsius: number): number {
-    return (celsius * 9 / 5) + 32;
+
 }
 
+// Dado un arreglo de números, devuelve un nuevo arreglo que contenga solo los números pares del arreglo original.
 export function filtrarPares(arr: number[]): number[] {
-    return arr.filter(num => num % 2 === 0);
+
 }
 
+// Dado un número `n`, devuelve el factorial de `n`. El factorial de un número es el producto de todos los números desde 1 hasta `n`.
+// Ejemplo: factorial(5) -> 5 * 4 * 3 * 2 * 1 = 120
 export function factorial(n: number): number {
-    let resultado = 1;
-    for (let i = 1; i <= n; i++) {
-        resultado *= i;
-    }
-    return resultado;
+
+}
+
+// Promedio de un arreglo
+// Crea una función que devuelva el promedio de los elementos de un arreglo de números.
+export function promedioArreglo(arr: number[]): number {
+
+  }
+
+// Eliminar duplicados
+// Escribe una función que elimine los valores duplicados de un arreglo.
+export function eliminarDuplicados(arr: number[]): number[] {
+  
+}
+
+// Multiplicar todos los números de una matriz
+// Escribe una función que multiplique todos los elementos de una matriz.
+export function multiplicarMatriz(matriz: number[][]): number {
+
+}
+
+// Contar las palabras en una frase
+// Crea una función que reciba una frase y devuelva la cantidad de palabras.
+export function contarPalabras(frase: string): number {
+
+}
+
+
+// Obtener la mediana de un arreglo
+// Crea una función que calcule la mediana de un arreglo de números.
+export function calcularMediana(arr: number[]): number {
+
+}
+
+// Calcular el máximo común divisor (MCD) de dos números
+// Crea una función que calcule el máximo común divisor (MCD) de dos números usando el algoritmo de Euclides.
+export function mcd(a: number, b: number): number {
+
+}
+
+// Validar un número de tarjeta de crédito usando el algoritmo de Luhn
+// Crea una función que valide si un número de tarjeta de crédito es válido utilizando el algoritmo de Luhn.
+export function validarTarjeta(numero: string): boolean {
+
 }
