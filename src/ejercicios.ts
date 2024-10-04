@@ -2,6 +2,13 @@
  * Completar la lógica de los 20 ejercicios siguientes.
  * Todas las function deben de retornar una respuesta acorde a la definición que tienen.
  * Ej. myFN(...): number {...} >> myFN debe de retornar un number.
+ * 
+ * INTEGRANTES DEL GRUPO:
+ * -
+ * -
+ * -
+ * -
+ * 
  */
 
 // (1) Dado un número `n`, devuelve la suma de los primeros `n` números naturales.
