@@ -1,11 +1,11 @@
 // Dado un número `n`, devuelve la suma de los primeros `n` números naturales.
-export function sumaNumerosNaturales(n: number): number {
-    let suma = 0;
-    for (let i = 1; i <= n; i++) {
-        suma += i;
-    }
-    return suma;
-}
+// export function sumaNumerosNaturales(n: number): number {
+//     let suma = 0;
+//     for (let i = 1; i <= n; i++) {
+//         suma += i;
+//     }
+//     return suma;
+// }
 
 // Dado un número `n`, verifica si es un número primo.
 export function esPrimo(n: number): boolean {
@@ -151,4 +151,21 @@ export function esPangrama(cadena: string): boolean {
 
     // Comprobar si contiene todas las letras del alfabeto
     return alfabeto.split('').every((letra) => cadenaNormalizada.includes(letra));
+}
+
+
+//Capacidad 
+export function clasificarEdades(edades: number[]): [number, number] {
+    let menoresDe21 = 0;
+    let mayoresOIgualA21 = 0;
+
+    edades.forEach(edad => {
+        if (edad < 21) {
+            menoresDe21++;
+        } else {
+            mayoresOIgualA21++;
+        }
+    });
+
+    return [menoresDe21, mayoresOIgualA21];
 }

@@ -11,9 +11,16 @@
  * 
  */
 
-// (1) Dado un número `n`, devuelve la suma de los primeros `n` números naturales.
-// Ejemplo: 10 >> 55
-export function sumaNumerosNaturales(n: number): number {}
+// (1) Para tener control de la gente que hay en una disco el gerente quiere saber cuantas personas de diferentes edades han entrado. 
+// No se han permitido la entrada a menores de 18 ni mayores de 40. Para la carga de los datos se usa la función aleatorio(Math.floor(Math.random() * (max - min + 1) ) + min)
+// Se sabe que la cantidad total de personas dentro del local es de 270
+// Se quiere saber: 	
+// Cuántas personas son menores de 21 años
+// Cuántas personas mayores o igual a 21 años
+// Cuántas personas en total
+//Ej: edades = [18, 19, 20, 21, 25, 40]
+//    resultado: [3,3]
+export function clasificarEdades(n: number): number[] {}
 
 // (2) Dado un número `n`, verifica si es un número primo. Devuelve `true` si es primo, de lo contrario, devuelve `false`.
 // Ejemplo: 
@@ -108,3 +115,4 @@ export function convertirABinario(n: number): string {}
 // "El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo." >> true
 // "Hola Mundo" >> false
 export function esPangrama(cadena: string): boolean {}
+
